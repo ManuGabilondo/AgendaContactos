@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AgendaContactos.Models.Contacto>
+
+<h1>Contactos</h1>
+
+<p>
+    <a class="btn btn-primary" href="@Url.Action("Create")">Crear Nuevo Contacto</a>
+</p>
+
+<div class="row">
+    @foreach (var contacto in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <h5 class="card-title">@contacto.Nombre</h5>
+                <p class="card-text"><strong>Correo:</strong> @contacto.Correo</p>
+                <p class="card-text"><strong>Teléfono:</strong> @contacto.Telefono</p>
+                <p class="card-text"><strong>Dirección:</strong> @contacto.Direccion</p>
+                <a href="@Url.Action("Edit", new { id = contacto.Id })" class="btn btn-primary">Editar</a>
+                <a href="@Url.Action("Delete", new { id = contacto.Id })" class="btn btn-danger">Eliminar</a>
+            </div>
+        </div>
+    }
+</div>

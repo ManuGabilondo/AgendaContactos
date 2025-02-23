@@ -1,0 +1,64 @@
+/* Tema oscuro con tonos de azul */
+body {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00aaff; /* Títulos en azul claro */
+}
+
+.btn-primary {
+    background-color: #003366; /* Azul oscuro */
+    border-color: #003366;
+}
+
+    .btn-primary:hover {
+        background-color: #004080; /* Azul más claro al pasar el mouse */
+        border-color: #004080;
+    }
+
+.card {
+    background-color: #2e3b4e; /* Fondo de las tarjetas */
+    border: 1px solid #003366; /* Borde azul oscuro */
+    border-radius: 8px;
+    color: #f0f0f0; /* Texto dentro de las tarjetas */
+    padding: 20px;
+    margin: 15px;
+}
+
+    .card:hover {
+        background-color: #1a2533; /* Fondo más oscuro al pasar el mouse */
+    }
+
+.table {
+    background-color: #1a1a2e; /* Fondo de la tabla */
+    border-color: #003366; /* Borde azul oscuro */
+}
+
+    .table th, .table td {
+        color: #f0f0f0;
+    }
+
+.form-control {
+    background-color: #2e3b4e; /* Fondo oscuro en campos de entrada */
+    border: 1px solid #003366; /* Borde azul oscuro */
+    color: #f0f0f0;
+}
+
+    .form-control:focus {
+        border-color: #00aaff; /* Color azul al enfocar los campos */
+    }
+
+.navbar {
+    background-color: #003366; /* Barra de navegación azul oscura */
+}
+
+.navbar-nav .nav-link {
+    color: #f0f0f0; /* Color claro en enlaces de la barra de navegación */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #00aaff; /* Color azul claro al pasar el mouse sobre los enlaces */
+    }
